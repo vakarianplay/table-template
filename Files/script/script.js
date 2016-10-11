@@ -1,4 +1,4 @@
-﻿function DayClick(dayNum, obj) {
+function DayClick(dayNum, obj) {
     if ($(obj).hasClass('selected') && ($('#Schedule table tbody tr td.d' + dayNum + ' div.selected').length)) {
         $('#Schedule table tbody tr td.d' + dayNum + ' div').removeClass('selected');
         $(obj).removeClass('selected');
@@ -91,3 +91,4 @@ function SubmitSchedule() {
     XMLSchedule += "</week>";
     $('#output').text(XMLSchedule);
 }
+
